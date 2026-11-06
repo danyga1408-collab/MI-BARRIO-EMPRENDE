@@ -1,0 +1,280 @@
+:root {
+  --color-dominante: #5b2c83;
+  --color-secundario: #9b72cf;
+  --color-acento: #e6b8f2;
+  --color-neutro: #f8f2fc;
+  --color-texto: #3d2057;
+  --color-blanco: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-neutro);
+  color: var(--color-texto);
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--color-dominante);
+  color: var(--color-blanco);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--color-acento);
+}
+
+#inicio {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 70px 20px;
+}
+
+#inicio h2 {
+  font-size: 35px;
+}
+
+#inicio p {
+  font-size: 18px;
+}
+
+.boton {
+  display: inline-block;
+  background-color: var(--color-acento);
+  color: var(--color-dominante);
+  padding: 12px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background-color: var(--color-dominante);
+  color: var(--color-blanco);
+}
+
+#negocios {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#negocios h2 {
+  color: var(--color-dominante);
+  font-size: 30px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.tarjeta {
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-secundario);
+  border-radius: 15px;
+  padding: 25px;
+  width: 250px;
+  box-shadow: 0 4px 10px #00000015;
+}
+
+.tarjeta h3 {
+  color: var(--color-dominante);
+}
+
+#catalogos {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #efe3f8;
+}
+
+#catalogos > h2 {
+  color: var(--color-dominante);
+  font-size: 30px;
+}
+
+.catalogo {
+  background-color: var(--color-blanco);
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 1100px;
+  border-radius: 20px;
+  border-top: 6px solid var(--color-secundario);
+  box-shadow: 0 4px 12px #00000015;
+}
+
+.catalogo h2 {
+  color: var(--color-dominante);
+  margin-bottom: 25px;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.producto {
+  background-color: var(--color-neutro);
+  border: 1px solid #d5e0da;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+}
+
+.producto h3 {
+  color: var(--color-dominante);
+}
+
+.producto p {
+  line-height: 1.5;
+}
+
+.producto span {
+  display: block;
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#colores {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: var(--color-neutro);
+}
+
+#colores h2 {
+  color: var(--color-dominante);
+  font-size: 35px;
+}
+
+.descripcion-colores {
+  max-width: 900px;
+  margin: 20px auto;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.color-card {
+  width: 230px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 4px 10px #00000015;
+  line-height: 1.6;
+}
+
+.dominante {
+  background-color: var(--color-dominante);
+  color: var(--color-blanco);
+}
+
+.secundario {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+}
+
+.acento {
+  background-color: var(--color-acento);
+  color: var(--color-dominante);
+}
+
+.neutro {
+  background-color: var(--color-neutro);
+  color: var(--color-texto);
+  border: 2px solid #d5d5d0;
+}
+
+#nosotros {
+  background-color: var(--color-acento);
+  color: var(--color-dominante);
+  text-align: center;
+  padding: 80px 30px;
+}
+
+#nosotros h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+#nosotros p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 22px;
+  line-height: 1.8;
+}
+
+footer {
+  background-color: var(--color-dominante);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 8px;
+  }
+
+  #inicio h2 {
+    font-size: 25px;
+  }
+
+  .tarjeta,
+  .producto,
+  .color-card {
+    width: 90%;
+  }
+
+  .catalogo {
+    padding: 15px;
+  }
+
+  #nosotros h2 {
+    font-size: 30px;
+  }
+
+  #nosotros p {
+    font-size: 19px;
+  }
+
+  .descripcion-colores {
+    font-size: 18px;
+  }
+}
